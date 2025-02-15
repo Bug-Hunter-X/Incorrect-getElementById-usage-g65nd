@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+  <script>
+    // Incorrect way to access an element by ID
+    document.getElementByIdx('myDiv').innerHTML = "<p>Paragraph changed</p>"; 
+  </script>
+</body>
+</html>
